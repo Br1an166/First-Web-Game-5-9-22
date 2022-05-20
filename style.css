@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #404040;
+}
+
+#container{
+display: flex;
+  background-color: #d6d6cd;
+  width: 530px;
+  margin: 25px;
+}
+
+
+#b1{
+display: flex;
+  margin: 10px;
+
+}
+
+
+#container2{
+display: flex;
+  background-color: #e3d3e9;
+   width: 530px;
+}
+
+.box{
+
+width: 505px;
+  height: 250px;
+  margin: 10px;
+  border-style: dotted;
+  border-color: #9e9e9e;
+}
