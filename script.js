@@ -11,8 +11,9 @@ el.addEventListener("click", function() {
   ChangeColor("b1");
 }, false);
 
- 
- el = document.getElementById("b2");
+
+
+el = document.getElementById("b2");
 el.addEventListener("click", function() {
   ChangeColor("b2");
 }, false);
