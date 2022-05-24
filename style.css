@@ -7,10 +7,10 @@ body{
   background-color: #404040;
 }
 
-#container-color{
+#container-color1{
 display: flex;
   background-color: #d6d6cd;
-  width: 90%;
+  width: 45%;
   height: 25%;
   margin: 25px;
 }
@@ -25,6 +25,7 @@ display: flex;
 #b2{
 display: flex;
    background-color: black;
+  color: white;
   margin: 10px;
   height: 80%;
 }
@@ -37,12 +38,14 @@ display: flex;
 #b4{
 display: flex;
    background-color: blue;
+  color: white;
   margin: 10px;
   height: 80%;
 }
 #b5{
 display: flex;
    background-color: green;
+  color: white;
   margin: 10px;
   height: 80%;
 }
@@ -53,8 +56,15 @@ display: flex;
   height: 80%;
 }
 
+#container-color2{
+display: flex;
+  background-color: #d6d6cd;
+  width: 45%;
+  height: 25%;
+  margin: 25px;
+}
 
-#container2{
+#container-guess1{
 display: flex;
   background-color: #d6d6cd;
   width: 90%;
@@ -62,6 +72,13 @@ display: flex;
   margin: 25px;
 }
 
+#container-guess2{
+display: flex;
+  background-color: #d6d6cd;
+  width: 90%;
+  height: 35%;
+  margin: 25px;
+}
 
 .box{
 
