@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded'), () => {
     },
   ]
 
+cardArray.sort(() => 0.5 - Math.random())
+  
   const grid = document.quertySelection('.grid')
+  const resultDisplay = document.querSelector('#result')
   var cardsChosen = []
   var cardsChosenId = []
   var cardsWon = []
@@ -55,13 +58,19 @@ function checkForMatchs() {
   if (cardsChosen[0] === cardsChosen[1]) {
     alert('!!you found a match!!')
     cards[opinionOneId].setAttribute('scr', 'image/Blank1.png')
-     cards[opinionTwoId].setAttribute('scr', 'image/Blank1.png')
+    cards[opinionTwoId].setAttribute('scr', 'image/Blank1.png')
     cardsWon.push(cardsChosen)
   } else {
-    cards[optionOneId].setAttribute('scr', images/CardBack1.jpeg)
-     cards[optionTwoId].setAttribute('scr', images/CardBack1.jpeg)
+    cards[optionOneId].setAttribute('scr', images / CardBack1.jpeg)
+    cards[optionTwoId].setAttribute('scr', images / CardBack1.jpeg)
     alert('D: Nope, try again D:')
-    
+
+  }
+  cardsChosen = []
+  cardsChosenId = []
+  resultDisplay.textContent = cardsWon.length
+  if (cardsWon.length === cardArray.length/2) {
+    resultDisplay.textContent = "!Congratulations!, You Matched them all :D !"
   }
 
 
