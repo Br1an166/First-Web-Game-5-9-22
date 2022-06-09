@@ -32,8 +32,8 @@ const cardArray = [
 ]
 
 const grid = document.quertySelection('.grid')
- var.cardsChosen = []
- var.cardsChosenId = []
+ var cardsChosen = []
+ var cardsChosenId = []
 
 
   function createBoard() {
@@ -47,11 +47,19 @@ const grid = document.quertySelection('.grid')
     
     }}
 }
+function checkForMatchs () {
+  var card = document.querSelectionAll('img')
+  const optionOneId = cardsChosenId[0]
+}
 
 function flipCard() {
-  var cardid = this.getAttribute('data-id')
+  var cardId = this.getAttribute('data-id')
   cardChosen.push(cardArray[cardId].name)
-  cardsChosenid
+  cardsChosenId.push(cardArray[cardId].name)
+  this.setAtribute('scr',cardArray[cardId].img)
+  if (cardsChosen.legnth === 2) {
+    setTimeout(checkForMatch,500)
+  }
 }
 
 createBoard()
