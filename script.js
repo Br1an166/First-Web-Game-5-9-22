@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/Blue1.png'
     },
     {
+      name: 'Blue1',
+      img: 'images/Blue1.png'
+    },
+    {
+      name: 'Red1',
+      img: 'images/Red1.png'
+    },
+    {
       name: 'Red1',
       img: 'images/Red1.png'
     },
@@ -15,8 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/Yellow1.png'
     },
     {
+      name: 'Yellow1',
+      img: 'images/Yellow1.png'
+    },
+    {
       name: 'Orange1',
       img: 'images/Green1.png'
+    },
+    {
+      name: 'Orange1',
+      img: 'images/Green1.png'
+    },
+    {
+      name: 'Purple1',
+      img: 'images/Purple1.png'
     },
 
     {
