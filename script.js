@@ -1,29 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  
+
   const cardArray = [
     {
-      name: 'Blue',
+      name: 'Blue1',
       img: 'images/Blue1.png'
     },
     {
-      name: 'Red',
+      name: 'Red1',
       img: 'images/Red1.png'
     },
     {
-      name: 'Yellow',
+      name: 'Yellow1',
       img: 'images/Yellow1.png'
     },
     {
-      name: 'Orange',
+      name: 'Orange1',
       img: 'images/Green1.png'
     },
-   
+
     {
-      name: 'Purple',
+      name: 'Purple1',
       img: 'images/Purple1.png'
     },
-   
+
   ]
 
   cardArray.sort(() => 0.5 - Math.random())
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let cardsChosenId = []
   let cardsWon = []
 
- 
+
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement('img')
@@ -45,19 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  
+
   function checkForMatch() {
     const cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
-    
-    if(optionOneId == optionTwoId) {
+
+    if (optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute('src', 'images/CardBack1.png')
       cards[optionTwoId].setAttribute('src', 'images/CardBack1.png')
-      alert('!You matched wrong D: !')
+      alert('! You matched wrong D: !')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
-      alert('!You matched :D!')
+      alert('! You matched :D !')
       cards[optionOneId].setAttribute('src', 'images/Blank1.png')
       cards[optionTwoId].setAttribute('src', 'images/Blank1.png')
       cards[optionOneId].removeEventListener('click', flipCard)
@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosen = []
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
-    if  (cardsWon.length === cardArray.length/2) {
-      resultDisplay.textContent = '!Congratulations! You found them all :D!'
+    if (cardsWon.length === cardArray.length / 2) {
+      resultDisplay.textContent = '!Congratulations! You found them all :D !!'
     }
   }
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosen.push(cardArray[cardId].name)
     cardsChosenId.push(cardId)
     this.setAttribute('src', cardArray[cardId].img)
-    if (cardsChosen.length ===2) {
+    if (cardsChosen.length === 2) {
       setTimeout(checkForMatch, 500)
     }
   }
